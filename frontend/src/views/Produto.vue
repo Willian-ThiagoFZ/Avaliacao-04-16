@@ -5,6 +5,7 @@
         cols="12"
         md="12"
       >
+      <h1>Welcome to Your Vue.js App</h1>
       <v-alert elevation="6" v-if="this.alert" :type="this.alert.type">{{ this.alert.text }}</v-alert>
         <v-data-table
           :headers="headers"

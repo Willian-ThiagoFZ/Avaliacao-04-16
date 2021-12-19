@@ -56,8 +56,7 @@ export default {
   data () {
     return {
       items: [
-        { title: 'Controle de Estoque', icon: 'mdi-briefcase-check', to: '/'},
-        { title: 'Produtos', icon: 'mdi-cart-arrow-down', to: '/produtos'},
+        { title: 'Produtos', icon: 'mdi-cart-arrow-down', to: '/'},
         { title: 'Fornecedor', icon: 'mdi-airplane-check', to: '/fornecedores'},
         { title: 'Categoria dos Produtos', icon: 'mdi-view-dashboard', to: '/categorias'},
       ],
