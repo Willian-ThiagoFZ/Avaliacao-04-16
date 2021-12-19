@@ -5,7 +5,6 @@
         cols="12"
         md="12"
       >
-      <h1>Welcome to Your Vue.js App</h1>
       <v-alert elevation="6" v-if="this.alert" :type="this.alert.type">{{ this.alert.text }}</v-alert>
         <v-data-table
           :headers="headers"
@@ -81,8 +80,19 @@
                         </v-col>
                         <v-col
                           cols="12"
-                          sm="6"
-                          md="6"
+                          sm="4"
+                          md="4"
+                        >
+                          <v-text-field
+                            v-model="editedItem.balance"
+                            label="Quantidade Inicial do Estoque"
+                            required
+                          ></v-text-field>
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="4"
+                          md="4"
                         >
                           <v-select
                             v-model="editedItem.tipoProduto"
@@ -94,8 +104,8 @@
                         </v-col>
                         <v-col
                           cols="12"
-                          sm="6"
-                          md="6"
+                          sm="4"
+                          md="4"
                         >
                           <v-select
                             v-model="editedItem.fornecedor"
@@ -298,6 +308,7 @@
       editedItem: {
         id: null,
         name: '',
+        balance: 0,
         precoCompra: null,
         precoVenda: null,
         fornecedor: null,
@@ -306,6 +317,7 @@
       defaultItem: {
         id: null,
         name: '',
+        balance: 0,
         precoCompra: null,
         precoVenda: null,
         fornecedor: null,
